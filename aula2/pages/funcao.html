@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function msg() {
+            document.write("Aula de função <br>"); //<br> pula linha
+        }
+
+        msg();
+        msg();
+
+        function media(a, b) {
+            document.write("Média: " + (a + b) / 2);
+        }
+
+        //Função anônima pq não tem nome
+        const media2 = function (a, b=200) {
+            return (a + b) / 2;
+        };
+
+
+        //Arrow Functon (programação funcional)
+        const media3 = (a, b=21) => (a + b) / 2;
+        
+        const media4 = (a, b=2) => {
+            c = (a + b) / 2;
+            document.write("<br>olá");
+            return c;
+        }
+
+        media(10, 20);
+        document.write("<br>Média2: " + media2(50, 75));
+        document.write("<br>Média3: " + media3(80, 270));
+        document.write("<br>Média4: " + media4(-50, 270));
+
+        //Função arrow que retorne o nome de vocês:
+        nome = (name=prompt("Digite seu nome:"))=> document.write("<br> nome: " + name);
+        nome();
+        </script>
+</body>
+
+</html>

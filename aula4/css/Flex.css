@@ -1,0 +1,33 @@
+.quadrado {
+    border: none;
+    background-color: gray;
+    height: 200px;
+    width: 50%;
+    display: flex
+    
+}
+
+.bola {
+    display: flex;
+    list-style: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bola li:nth-child(1) {
+    background-color: rgb(0, 255, 115);
+}
+
+.bola li:nth-child(2) {
+    background-color: rgb(229, 255, 0);
+}
+
+.bola li:nth-child(3) {
+    background-color: rgb(255, 0, 0);
+}
+
+.bola li:nth-child(4) {
+    background-color: rgb(0, 23, 128);
+}

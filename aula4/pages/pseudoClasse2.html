@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo Classe</title>
+
+        <style>
+
+            .disciplinas {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 18px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .disciplinas li{
+                color: blue;
+                border: 1px solid #eee;
+                background-color: bisque;
+            }
+
+            .disciplinas li:first-child{
+                color: brown;
+                border: none;
+            }
+
+            .disciplinas li:last-child{
+                color: gray;
+                border: none;
+            }
+
+            .disciplinas li:nth-child(odd) {
+                background-color: aquamarine;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <ul class="disciplinas">
+            <li>Lóigca</li>
+            <li>Banco de Dados</li>
+            <li>P.O.O</li>
+            <li>Front-End</li>
+            <li>API</li>
+        </ul>        
+
+    </body>
+</html>
