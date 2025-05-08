@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Relativas</title>
+
+    <style>
+        /* 32px */
+        .texto {
+            font-size: 2em;
+        }
+
+        /* 48px */
+        .texto p {
+            font-size: 1.5em;
+        }
+
+        /* 72px */
+        .frase span {
+            /* font-size: 1.5em; */ /*em é relativo ao pai direto*/
+            font-size: 1.5rem; /*rem quebra a regra - ele pega a referÊncia do html*/
+        }
+
+        .exemplo {
+            font-size: 0.875em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Unidades de Medida</h1>
+    <div class="texto">
+        <p>Aula de css</p>
+        <p class="frase">
+            Lorem <span>ipsum dolor</span> sit amet, consectetur adipisicing elit.
+            Et iste harum corporis nam ab unde, obcaecati vel, adipisci rerum labore
+            perspiciatis in quisquam. Id quis ut aut nesciunt illo atque!
+        </p>
+    </div>
+
+    <div class="exemplo">
+        <p>Texto</p>
+    </div>
+
+</body>
+
+</html>

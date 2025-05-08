@@ -1,81 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/componente.css">
 
-  </head>
+</head>
 
-  <body>
+<body>
+  <div class="container">
+    <header class="layout-cabecalho">
+      <img src="./img/oi-logo.png" alt="Internet" width="80px">
+    </header>
+  </div>
+
+  <div class="container">
+    <section class="layout-principal">
+      <div class="principal">
+        <h1 class="principal__titulo">Contrate a melhor internet banda larga do Brasil</h1>
+        <p class="principal__subtitulo">Pacotes que cabem no seu bolso...</p>
+      </div>
+      <div class="principal__assinar">
+        <a href="#planos" class="botao botao--assinar">Conheça nossos planos</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="layout-depoimento">
+      <div class="depoimento">
+        <blockquote>
+          Gostei muito da internet da empresa, não tive problemas de queda de conexão...
+        </blockquote>
+        <div class="depoimento__autor">
+          <img src="./img/pessoa.png" alt="imagem" width="150px">
+          <p>Antônio de Oliveira</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="planos" class="layout-planos">
     <div class="container">
-      <header>
-        <img src="./img/oi-logo.png" alt="Internet" width="80px">
-      </header>
+      <div class="row">
+        <div class="col-md-4">
+          <article class="plano">
+            <h2 class="plano__cabecalho">Básico</h2>
+            <div class="plano__preco">R$59,90</div>
+            <ul class="plano__caracteristicas">
+              <li>Até <strong>5 usuários</strong></li>
+              <li>10GB de Acesso</li>
+              <li>Instalação Gratuita</li>
+              <li>Fibra Ótica</li>
+              <li>Sem Fidelidade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a href="#" class="botao">Assinar</a>
+            </footer>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="plano">
+            <h2 class="plano__cabecalho">Intermediário</h2>
+            <div class="plano__preco">R$99,90</div>
+            <ul class="plano__caracteristicas">
+              <li>Até <strong>20 usuários</strong></li>
+              <li>100GB de Acesso</li>
+              <li>Instalação Gratuita</li>
+              <li>Fibra Ótica</li>
+              <li>Sem Fidelidade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a href="#" class="botao">Assinar</a>
+            </footer>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="plano">
+            <h2 class="plano__cabecalho">Avançado</h2>
+            <div class="plano__preco">R$119,90</div>
+            <ul class="plano__caracteristicas">
+              <li>Até <strong>50 usuários</strong></li>
+              <li>1TB de Acesso</li>
+              <li>Instalação Gratuita</li>
+              <li>Fibra Ótica</li>
+              <li>Sem Fidelidade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a href="#" class="botao">Assinar</a>
+            </footer>
+          </article>
+        </div>
+
+        </article>
+      </div>
     </div>
 
-    <div id="palnos">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <article>
-              <h2>Básico</h2>
-              <div>R$59,90</div>
-              <ul>
-                <li>Até <strong>5 usuários</strong></li>
-                <li>10GB de Acesso</li>
-                <li>Instalação Gratuita</li>
-                <li>Fibra Ótica</li>
-                <li>Sem Fidelidade</li>
-              </ul>
-              <footer>
-                <a href="#" class="botao">Assinar</a>
-              </footer>
-            </article>
-          </div>
-
-          <div class="col-md-4">
-            <article>
-              <h2>Intermediário</h2>
-              <div>R$99,90</div>
-              <ul>
-                <li>Até <strong>20 usuários</strong></li>
-                <li>100GB de Acesso</li>
-                <li>Instalação Gratuita</li>
-                <li>Fibra Ótica</li>
-                <li>Sem Fidelidade</li>
-              </ul>
-              <footer>
-                <a href="#" class="botao">Assinar</a>
-              </footer>
-            </article>
-          </div>
-
-          <div class="col-md-4">
-            <article>
-              <h2>Avançado</h2>
-              <div>R$119,90</div>
-              <ul>
-                <li>Até <strong>50 usuários</strong></li>
-                <li>1TB de Acesso</li>
-                <li>Instalação Gratuita</li>
-                <li>Fibra Ótica</li>
-                <li>Sem Fidelidade</li>
-              </ul>
-              <footer>
-                <a href="#" class="botao">Assinar</a>
-              </footer>
-            </article>
-          </div>
-
-          </article>
+    <div class="container">
+      <div class="layout-rodape">
+        <div class="rodape">
+          <p>&#174 Oi serviços - Telefonia e Internet LTDA.</p>
         </div>
       </div>
     </div>
 
-  </body>
+  </div>
+
+
+</body>
 
 </html>
